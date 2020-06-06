@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:Descuentos="http://www.mtis.org/Descuentos/" xmlns:Disponibilidad="http://www.mtis.org/Disponibilidad/" xmlns:Facturacion="http://www.mtis.org/Facturacion/" xmlns:Notificacion="http://www.mtis.org/Notificacion/" xmlns:Usuario="http://www.mtis.org/Usuario/" xmlns:paquete="http://paquete">
+  <process name="paquete:PaqueteVacacional">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="paquete:PaqueteVacacionalService" port="PaqueteVacacionalPort"/>
+    </provide>
+    <invoke partnerLink="usuarioPL">
+      <service name="Usuario:Usuario" port="UsuarioSOAP"/>
+    </invoke>
+    <invoke partnerLink="notificacionPL">
+      <service name="Notificacion:Notificacion" port="NotificacionSOAP"/>
+    </invoke>
+    <invoke partnerLink="disponibilidadPL">
+      <service name="Disponibilidad:Disponibilidad" port="DisponibilidadSOAP"/>
+    </invoke>
+    <invoke partnerLink="descuentoPL">
+      <service name="Descuentos:Descuentos" port="DescuentosSOAP"/>
+    </invoke>
+    <invoke partnerLink="facturaPL">
+      <service name="Facturacion:Facturacion" port="FacturacionSOAP"/>
+    </invoke>
+  </process>
+</deploy>
