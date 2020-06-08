@@ -22,7 +22,7 @@
   </extensions>
   <extensions>
     <extendedObject href="PaqueteVacacional.bpel#/"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1591473944853"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1591627150017"/>
   </extensions>
   <extensions>
     <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.2"/>
@@ -201,7 +201,7 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
@@ -213,23 +213,23 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2/@copy.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2/@copy.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.2"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2/@copy.2"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.4"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
@@ -237,51 +237,51 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.2/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.4/@copy.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.2"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.2"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.2/@copy.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.2/@copy.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.2/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.2/@copy.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.0/@copy.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.0/@copy.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@else/@activity/@activities.0/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@else/@activity/@activities.0/@copy.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
@@ -293,19 +293,7 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.0"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
-  </extensions>
-  <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.0/@copy.1"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
-  </extensions>
-  <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.0/@copy.0"/>
-    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
-  </extensions>
-  <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.3"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.3"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
@@ -317,31 +305,75 @@
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.2"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.2"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.2/@copy.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.2/@copy.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.2/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.2/@copy.0"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.2/@copy.2"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.2/@copy.2"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.4"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.4"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.4/@copy.1"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.4/@copy.1"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
   <extensions>
-    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.3/@activity/@activities.4/@copy.0"/>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.4/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@variables/@children.19"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@variables/@children.20"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.5/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="PaqueteVacacional.bpel#//@activity/@activities.4/@activity/@activities.3/@activity/@activities.0/@copy.4"/>
     <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
   </extensions>
 </extensionmodel:ExtensionMap>

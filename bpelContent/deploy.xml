@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:Descuentos="http://www.mtis.org/Descuentos/" xmlns:Disponibilidad="http://www.mtis.org/Disponibilidad/" xmlns:Facturacion="http://www.mtis.org/Facturacion/" xmlns:Notificacion="http://www.mtis.org/Notificacion/" xmlns:Usuario="http://www.mtis.org/Usuario/" xmlns:paquete="http://paquete">
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:Descuentos="http://www.mtis.org/Descuentos/" xmlns:Disponibilidad="http://www.mtis.org/Disponibilidad/" xmlns:Facturacion="http://www.mtis.org/Facturacion/" xmlns:Notificacion="http://www.mtis.org/Notificacion/" xmlns:Reserva="http://www.mtis.org/Reserva/" xmlns:Usuario="http://www.mtis.org/Usuario/" xmlns:paquete="http://paquete">
   <process name="paquete:PaqueteVacacional">
     <active>true</active>
     <retired>false</retired>
@@ -21,6 +21,9 @@
     </invoke>
     <invoke partnerLink="facturaPL">
       <service name="Facturacion:Facturacion" port="FacturacionSOAP"/>
+    </invoke>
+    <invoke partnerLink="reservaPL">
+      <service name="Reserva:Reserva" port="ReservaSOAP"/>
     </invoke>
   </process>
 </deploy>

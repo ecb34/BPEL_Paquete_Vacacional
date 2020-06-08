@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://paquete" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://www.mtis.org/Usuario/" xmlns:wsdl1="http://www.mtis.org/Notificacion/" xmlns:wsdl2="http://www.mtis.org/Disponibilidad/" xmlns:wsdl3="http://www.mtis.org/Descuentos/" xmlns:wsdl4="http://www.mtis.org/Facturacion/" name="PaqueteVacacional" targetNamespace="http://paquete">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://paquete" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:wsdl="http://www.mtis.org/Usuario/" xmlns:wsdl1="http://www.mtis.org/Notificacion/" xmlns:wsdl2="http://www.mtis.org/Disponibilidad/" xmlns:wsdl3="http://www.mtis.org/Descuentos/" xmlns:wsdl4="http://www.mtis.org/Facturacion/" xmlns:wsdl5="http://www.mtis.org/Reserva/" name="PaqueteVacacional" targetNamespace="http://paquete">
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      TYPE DEFINITION - List of types participating in this BPEL process 
@@ -22,11 +22,15 @@
     <plnk:partnerLinkType name="facturaPLN">
     <plnk:role name="facturaRole" portType="wsdl4:Facturacion"/>
   </plnk:partnerLinkType>
+    <plnk:partnerLinkType name="reservaPLN">
+    <plnk:role name="reservaRole" portType="wsdl5:Reserva"/>
+  </plnk:partnerLinkType>
     <import location="Usuario.wsdl" namespace="http://www.mtis.org/Usuario/"/>
     <import location="Notificacion.wsdl" namespace="http://www.mtis.org/Notificacion/"/>
     <import location="Disponibilidad.wsdl" namespace="http://www.mtis.org/Disponibilidad/"/>
     <import location="Descuentos.wsdl" namespace="http://www.mtis.org/Descuentos/"/>
     <import location="Facturacion.wsdl" namespace="http://www.mtis.org/Facturacion/"/>
+    <import location="Reserva.wsdl" namespace="http://www.mtis.org/Reserva/"/>
     <types>
         <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://paquete">
 

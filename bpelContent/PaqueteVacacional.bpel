@@ -5,7 +5,7 @@
          suppressJoinFailure="yes"
          xmlns:tns="http://paquete"
          xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
-         xmlns:ns="http://www.mtis.org/Usuario/" xmlns:ns1="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.mtis.org/Notificacion/" xmlns:ns2="http://www.mtis.org/Disponibilidad/" xmlns:ns3="http://www.mtis.org/Descuentos/" xmlns:ns4="http://www.mtis.org/Facturacion/">
+         xmlns:ns="http://www.mtis.org/Usuario/" xmlns:ns1="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.mtis.org/Notificacion/" xmlns:ns2="http://www.mtis.org/Disponibilidad/" xmlns:ns3="http://www.mtis.org/Descuentos/" xmlns:ns4="http://www.mtis.org/Facturacion/" xmlns:ns5="http://www.mtis.org/Reserva/">
 
     <!-- Import the client WSDL -->
 	<bpel:import location="PaqueteVacacionalArtifacts.wsdl" namespace="http://paquete" 
@@ -27,6 +27,7 @@
         <bpel:partnerLink name="disponibilidadPL" partnerLinkType="tns:disponibilidadPLN" partnerRole="disponibilidadRole"></bpel:partnerLink>
         <bpel:partnerLink name="descuentoPL" partnerLinkType="tns:descuentoPLN" partnerRole="descuentoRole"></bpel:partnerLink>
         <bpel:partnerLink name="facturaPL" partnerLinkType="tns:facturaPLN" partnerRole="facturaRole"></bpel:partnerLink>
+        <bpel:partnerLink name="reservaPL" partnerLinkType="tns:reservaPLN" partnerRole="reservaRole"></bpel:partnerLink>
     </bpel:partnerLinks>
   
     <!-- ================================================================= -->         
@@ -63,6 +64,8 @@
         <bpel:variable name="facturaPLRequest" messageType="ns4:CrearFacturaRequest"></bpel:variable>
         <bpel:variable name="notificacionPLResponse1" messageType="ns0:emailResponse"></bpel:variable>
         <bpel:variable name="notificacionPLRequest1" messageType="ns0:emailRequest"></bpel:variable>
+        <bpel:variable name="reservaPLResponse" messageType="ns5:crearReservaResponse"></bpel:variable>
+        <bpel:variable name="reservaPLRequest" messageType="ns5:crearReservaRequest"></bpel:variable>
     </bpel:variables>
 
     <!-- ================================================================= -->         
@@ -164,6 +167,49 @@
                     <bpel:sequence name="disponible">
                         
                         
+                        <bpel:assign validate="no" name="entradaRealizarReserva">
+                            <bpel:copy>
+                                <bpel:from><bpel:literal><tns:crearReserva xmlns:tns="http://www.mtis.org/Reserva/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idPaquete>0</idPaquete>
+  <email>email</email>
+  <unidades>0</unidades>
+  <precio>0.0</precio>
+</tns:crearReserva>
+</bpel:literal></bpel:from>
+                                <bpel:to variable="reservaPLRequest" part="parameters"></bpel:to>
+                            </bpel:copy>
+                            <bpel:copy>
+                                <bpel:from part="payload" variable="input">
+                                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:paquete_id]]></bpel:query>
+                                </bpel:from>
+                                <bpel:to part="parameters" variable="reservaPLRequest">
+                                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[idPaquete]]></bpel:query>
+                                </bpel:to>
+                            </bpel:copy>
+                            <bpel:copy>
+				                <bpel:from part="payload" variable="input">
+				                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:unidades]]></bpel:query>
+				                </bpel:from>
+				                <bpel:to part="parameters" variable="reservaPLRequest">
+				                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[unidades]]></bpel:query>
+				                </bpel:to>
+				            </bpel:copy>
+				            <bpel:copy>
+				                <bpel:from part="payload" variable="input">
+				                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:usuario]]></bpel:query>
+				                </bpel:from>
+				                <bpel:to part="parameters" variable="reservaPLRequest">
+				                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[email]]></bpel:query>
+				                </bpel:to>
+				            </bpel:copy>
+                            <bpel:copy>
+				                <bpel:from variable="precioPaquete"></bpel:from>
+				                <bpel:to part="parameters" variable="reservaPLRequest">
+				                    <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[precio]]></bpel:query>
+				                </bpel:to>
+				            </bpel:copy>
+                        </bpel:assign>
+                        <bpel:invoke name="realizarReserva" partnerLink="reservaPL" operation="crearReserva" portType="ns5:Reserva" inputVariable="reservaPLRequest" outputVariable="reservaPLResponse"></bpel:invoke>
                         <bpel:assign validate="no" name="entradaActualizarDisponibilidad">
                             <bpel:copy>
                                 <bpel:from><bpel:literal><tns:ActualizarDisponibilidad xmlns:tns="http://www.mtis.org/Disponibilidad/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -211,14 +257,7 @@
 </bpel:literal></bpel:from>
                                         <bpel:to variable="facturaPLRequest" part="parameters"></bpel:to>
                                     </bpel:copy>
-                                    <bpel:copy>
-                                        <bpel:from part="payload" variable="input">
-                                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[tns:paquete_id]]></bpel:query>
-                                        </bpel:from>
-                                        <bpel:to part="parameters" variable="facturaPLRequest">
-                                            <bpel:query queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0"><![CDATA[idReserva]]></bpel:query>
-                                        </bpel:to>
-                                    </bpel:copy>
+                                    
                                 </bpel:assign>
                                 <bpel:invoke name="generarFactura" partnerLink="facturaPL" operation="CrearFactura" portType="ns4:Facturacion" inputVariable="facturaPLRequest" outputVariable="facturaPLResponse"></bpel:invoke>
                                 <bpel:assign validate="no" name="entradaEmail">
